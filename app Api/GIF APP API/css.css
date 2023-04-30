@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color-white: #ccc;
+    --color-blue: #1F4287;
+    --color-blue-fourc: #002B5B;
+    --box-shadow: 0px 5px 15px 0px rgba(24, 29, 49, 0.9);
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-color: var(--color-blue-fourc);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color-white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* start header */
+header {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+header input,
+button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header input {
+    width: 40%;
+    padding: 10px;
+    border-bottom: 4px solid var(--color-blue-fourc);
+    background-color: var(--bg-color-white);
+}
+
+header button {
+    padding: 10px 25px;
+    color: white;
+    background-color: var(--color-blue-fourc);
+}
+/* end header */
+
+/* start error */
+.container h1 {
+    margin: auto;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: #FF6D60;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 4px solid #ED2B2A;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* end error */
+
+
+/* start section */
+section {
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    background-color:  var(--color-blue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+
+section article {
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color-white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section article img {
+    width: 100%;
+}
+
+section article button {
+    background-color: var(--color-blue);
+    color: white;
+    width: 180px;
+    padding: 10px ;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 30px;
+    position: relative;
+}
+section article .active::before {
+    position: absolute;
+    content: 'Copy';
+    width: fit-content;
+    height: fit-content;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px 10px;
+    top: -100%;
+    left: 50%;
+    background-color: var(--color-blue);
+    box-shadow: var(--box-shadow);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+section article .active::after {
+    position: absolute;
+    content: '';
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid var(--color-blue);
+    top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* end section */

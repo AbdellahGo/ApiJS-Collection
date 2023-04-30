@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-color: #645CBB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 550px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card .inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+.card .inputs input {
+    width: 70%;
+    padding: 15px 8px;
+    font-size: 19px;
+    border-bottom: 4px solid #645CBB;
+}
+
+.card .inputs button {
+    width: 30%;
+    padding: 0 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #645CBB;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+
+.outputs {
+    margin-top: 40px;
+}
+
+.flag {
+    text-align: center;
+}
+.flag img {
+    width: 250px;
+}
+
+.flag h3 {
+    font-size: 25px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+
+.ditelse {
+    margin: 50px 0 20px;
+}
+
+.ditelse ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.ditelse ul li {
+    width: 100%;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-left: 4px solid #645CBB;
+    background-color: #ddd;
+}
+
+
+span {
+    font-weight: normal;
+    color: #444;
+}
+
+
+h2 {
+    font-size: 30px;
+    padding: 5px 25px;
+    background-color: #ddd;
+    border-left: 4px solid #645CBB;
+}

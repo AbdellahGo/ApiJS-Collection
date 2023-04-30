@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-image: url(memes.avif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.card {
+    width: 400px;
+    background-color: #9384D1;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+}
+.card img {
+    max-width: 340px;
+}
+
+.card h3 {
+    padding: 5px;
+    font-size:22px;
+}
+
+
+.card button {
+    width: 60%;
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    background-color: #C9A7EB;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

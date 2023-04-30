@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --transp-white-1: rgba(255, 255, 255, 0.25);
+    --transp-white-2: rgba(255, 255, 255, 0.1);
+    --shadow: rgba(3, 46, 87, 0.2);
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background: rgb(145, 216, 228);
+    background: linear-gradient(167deg, rgba(145, 216, 228, 1) 0%, rgba(130, 170, 227, 1) 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contianer {
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    background-color: var(--transp-white-1);
+    border: 2px solid var(--transp-white-2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shape-1 {
+    width: 150px;
+    height: 150px;
+    left: -80px;
+    top: 100px;
+}
+
+.shape-2 {
+    width: 250px;
+    height: 250px;
+    right: -130px;
+    bottom: 50px;
+}
+
+
+.card {
+    width: 500px;
+    padding: 20px;
+    background-color: var(--transp-white-2);
+    border: 2px solid var(--transp-white-2);
+    box-shadow: 0 1.8em 3.7em var(--shadow);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+
+.card .input {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+.card input {
+    width: 65%;
+    padding: 15px;
+    color: white;
+    background-color: inherit;
+    border-bottom: 4px solid var(--transp-white-1);
+}
+input::placeholder {
+    color: white;
+}
+
+.card .submit {
+    width: 30%;
+    background-color: white;
+    color: #333;
+    font-weight: 600;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+.card .outputs {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.card .outputs .start {
+    padding: 10px 0 10px 20px;
+}
+
+.card .outputs .country {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card .outputs h3 {
+    font-size: 22px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.card .outputs .condition {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card .outputs img {
+    width: 150px;
+}
+
+.card .outputs .heat {
+    font-size: 40px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.card .outputs .wind {
+    display: flex;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.card .outputs .wind::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #91D8E4;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.card .outputs .wind p {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card .outputs .wind p span {
+    font-weight: 500;
+    display: block;
+}

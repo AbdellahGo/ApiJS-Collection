@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-color: #645CBB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.card .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card img {
+    max-width: 100%;
+}
+
+.card h2 {
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.card label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card #amount {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    border-bottom: 4px solid #A084DC;
+}
+
+.card .currency {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.card .currency select {
+    width: 45%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: #eee;
+    background-color: #A084DC;
+    outline: none;
+}
+
+.card .converter {
+    margin-top: 15px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #A084DC;
+    border: none;
+    color: #eee;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .result {
+    text-align: center;
+    margin-top: 15px;
+    background-color: #BFACE2;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

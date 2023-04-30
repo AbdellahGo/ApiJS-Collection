@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-color: #394867;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    width: 650px;
+    margin-top: 100px;
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 5px 15px 3px rgba(33, 42, 62, 0.9);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.card .header {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #394867;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.card section {
+    margin-top: 40px;
+}
+
+.card section .input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button {
+    background-color: #394867;
+    color: white;
+}
+
+
+.card section input {
+    border-bottom: 4px solid #394867;
+    width: 100px;
+}
+.card section .active {
+    position: relative;
+}
+.card section .active::after {
+    content: 'Text Copy';
+    position: absolute;
+    background-color: #212A3E;
+    width: 90px;
+    height: fit-content;
+    padding: 5px;
+    top: -95%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.card section .active::before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #212A3E;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.card section .outbut {
+    border-radius: 5px;
+    color: #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: oblique;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

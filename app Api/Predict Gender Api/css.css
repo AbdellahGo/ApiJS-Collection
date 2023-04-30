@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-color: #645CAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 5px 20px -1px rgba(33, 42, 62, 0.9);
+}
+
+
+.card .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+}
+
+.card .header h2 {
+    margin: auto;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.card .header input {
+    padding: 10px;
+    width: 65%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #917FB3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card .header button {
+    width: 30%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #917FB3;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.card .predict {
+    text-align: center;
+    margin-top: 25px;
+    padding: 25px;
+    color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.card .predict .name {
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card .predict .image {
+    margin: 10px auto;
+    background-color: white;
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card .predict img {
+    max-width: 180px;
+}
+
+
+.card .predict h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.card .predict .probability {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+/* #0081B4 Malle */
+/* #EA047E femmal */
