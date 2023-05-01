@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui;
+    background-color: #453C67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card {
+    text-align: center;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.card .outbout {
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    box-shadow: 0 20px 40px 0px #03001C91;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+h2 {
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+.card .image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    top: -27%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #453C67;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.image img {
+    width: 100%;
+}
+
+.card .outbout h3 {
+    padding: 5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #777;
+    padding: 5px;
+}
+
+.card .outbout .job {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.card .outbout .location {
+    margin-bottom: 10px;
+}
+.card .outbout .location i {
+    color: #453C67;
+    margin-right: 5px;
+}
+
+.card button {
+    margin-top: 50px;
+    padding: 15px 25px;
+    border: none;
+    color: #453C67;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
